@@ -1,0 +1,147 @@
+* {
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  transition: 0.3s;
+  font-family: poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+a {
+  text-decoration: none;
+  color: #232323;
+}
+
+.header_area {
+  background: #232323;
+  padding: 21px 0px;
+}
+.container {
+  max-width: 800px;
+  margin: auto;
+  position: relative;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #fff;
+}
+.menu {
+  background: #00c474;
+  position: absolute;
+  left: 25%;
+  padding: 14px 10px;
+  width: 2000px;
+  top: 42px;
+  padding-left: 52px;
+}
+.menu::before {
+  content: '';
+  left: -34px;
+  top: -72%;
+  position: absolute;
+  border-bottom: 35px solid #00c474;
+  border-left: 35px solid #89c40000;
+  border-top: 35px solid #c4008300;
+  border-right: 35px solid #b6b6b600;
+  transform: rotate(45deg);
+}
+
+.circle {
+  position: absolute;
+  height: 86px;
+  width: 86px;
+  border-radius: 50%;
+  background: #ffffff;
+  left: -55px;
+  top: -50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 3px 19px rgba(0, 0, 0, 0.16);
+}
+.circle span {
+   
+  height: 70px;
+  width: 70px;
+  border: 3px solid #00c474;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  animation: rotate 2s infinite linear;
+  transform: scale(1);
+  box-shadow: 0px 3px 19px rgba(0, 0, 0, 0.16);
+}
+@keyframes rotate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.menu_link {
+  padding: 0.8em 1.8em;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.menu_link:hover {
+  color: #fff;
+}
+
+.body {
+  width: 100%;
+  height: 100vh;
+  background:linear-gradient(90deg, #00000080,#00000080), url(../img/city.jpg) ;
+  /* background-image:  url(../img/city.jpg); */
+  background-size: cover;
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+}
+
+.headText{
+    text-align: center;
+    font-size:60px;
+    color:#ffffff;
+    font-weight: 800;
+
+    text-transform: uppercase;
+    padding-top: 200px;
+}
+.headText span{
+    color:#00c474;
+
+    font-weight: 800;
+}
+.subtitle{
+    text-align: center;
+    font-size:29px;
+    color:#fff;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.some_texts{
+    text-align: center;
+    padding: 2rem 4rem;
+    /* background:radial-gradient(#00000080,#00000000); */
+    color:rgb(255, 255, 255);
+    line-height: 28px;
+
+    border-radius: 25px;
+    /* text-shadow: 1px 1px 1px #00ff6a60; */
+}
